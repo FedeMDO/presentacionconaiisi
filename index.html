@@ -108,8 +108,8 @@
               Seguridad informática</strong></h4>
 
           <h1 style="color: white"><strong>SDN en un entorno de Cloud Computing</strong></h1>
-          <p class="text-intro" style="color: white"><strong>Montes de Oca, Federico</strong>; Galarza, Brian; Morales,
-            Martin; Encinas, Diego
+          <p class="text-intro" style="color: white"><strong>Montes de Oca, Federico</strong> - Galarza, Brian - Morales,
+            Martin - Encinas, Diego
           </p>
         </div>
         <!-- .end .wrap -->
@@ -168,8 +168,12 @@
                   <svg class="fa-cogs">
                     <use xlink:href="#fa-cogs"></use>
                   </svg>
-                  Desarrollo y Ejecucion
+                  Desarrollo y Ejecución
                 </h2>
+                <ul>
+                  <li>Despliegue</li>
+                  <li>Pruebas</li>
+                </ul>
               </div>
             </li>
 
@@ -181,7 +185,10 @@
                   </svg>
                   Conclusiones
                 </h2>
-
+                <ul>
+                    <li>Merco teórico</li>
+                    <li>Marco Práctico</li>
+                </ul>
               </div>
             </li>
             <li>
@@ -651,6 +658,52 @@
 
       <section>
         <span class="background-center-left" style="
+            background-image:url('./static/images/bg/fondo-general-template.jpg');
+            "></span>
+        <div class="wrap">
+          <br><br>
+          <h2 style="text-align:center">Ejemplos</h2>
+          <br><br>
+          <div class="bg-netflix">
+            <ul class="flexblock features">
+              <li>
+                <ol>
+                  <li>
+                    Con el comando <code>sudo mn --topo tree,depth=2,fanout=8</code>
+                    se despliega una red con topologia Árbol con profundidad 2, 9 switches, 64 hosts.
+                  </li>
+                  <br>
+                  <li>
+                    <img src="./static/images/topo-arbol.png" alt="Topologia arbol" style="
+                      display:inline-block;
+                      width: 100%;
+                      margin-left: auto;
+                      margin-right: auto;">
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol>
+                  <li>
+                    <img src="./static/images/mininet-http.png" alt="Topologia arbol" style="
+                      display:inline-block;
+                      width: 100%;
+                      margin-left: auto;
+                      margin-right: auto;">
+                  </li>
+                  <li>
+                    <h3 style="text-align:center">Definicion de hosts servidor y GET con <code>wget</code></h3>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <span class="background-center-left" style="
           background-image:url('./static/images/bg/fondo-general-template.jpg');
           "></span>
         <div class="wrap">
@@ -706,8 +759,10 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="cta-cover">
+            <br><br>
             <h1><strong>Desarrollo: Despliegue</strong></h1>
           </div>
+          <br><br>
           <ul class="flexblock steps">
             <li>
               <div>
@@ -737,6 +792,11 @@
               </div>
             </li>
           </ul>
+          <br><br><br><br><br><br><br><br><br>
+          *EBS proporciona volúmenes de almacenamiento de bloques persistentes para utilizar con las instancias de
+          Amazon EC2 en la nube de AWS. Cada volumen de Amazon EBS se replica automáticamente dentro de una zona de
+          disponibilidad para protegerle frente a los errores de componentes, ofreciéndole una alta disponibilidad y
+          durabilidad.
         </div>
         <!-- .end .wrap -->
       </section>
@@ -746,7 +806,7 @@
           background-image:url('./static/images/bg/fondo-general-template.jpg');
           "></span>
         <div class="wrap">
-          <br>
+          <br><br>
           <h2>Desarrollo: <strong>Ejecución</strong> </h2>
           <ul class="flexblock activity">
             <li>
@@ -824,7 +884,8 @@
                 <h2>&bull;Se utiliza la herramienta Iperf para el análisis de resultados.</h2>
                 </h2>
                 <h3>&bull;El fin de estas pruebas es analizar el desempeño de las redes SDN virtuales en una instancia
-                  de IaaS y en una VM local, enfoncándose en las capacidadades de virtualización en conjunto con las
+                  de IaaS pública y en una VM local (<strong>análoga a una Nube privada</strong>), enfoncándose en las
+                  capacidadades de virtualización en conjunto con las
                   capacidades de red.</h3>
                 </h2>
               </li>
@@ -867,7 +928,7 @@
                   <img alt="Thumbnail" src="./static/images/iperf-ancho-banda.png">
                   <figcaption class="aligncenter">
                     <h2>Ancho de banda</h2>
-                    <p>Iperf Throughput</p>
+                    <p>Iperf Throughput - Promedios: <strong>t2.micro 21,8Gbps</strong> - <strong>VM Local 36.5Gbps</strong>.</p>
                   </figcaption>
                 </figure>
               </a>
@@ -916,9 +977,12 @@
         <!-- .end .wrap -->
       </section>
 
-      <section class="bg-black">
-        <span class="background dark" style="background-image:url('./static/images/bg/1.jpg')"></span>
+      <section class="bg-white">
+        <span class="background-center-left" style="
+          background-image:url('./static/images/bg/fondo-general-template.jpg');
+          "></span>
         <div class="wrap">
+          <br><br>
           <h3><strong>Marco Teórico</strong></h3>
           <ul class="flexblock features">
             <li>
@@ -930,7 +994,7 @@
                   SDN
                 </h2>
                 <p style="text-align: justify">
-                  Las SDN, por su parte, son flexibles, robustas, centralizadas, económicamente más eficiente, de
+                  Flexibles, robustas, centralizadas, económicamente más eficiente, de
                   rápido despliegue y manipulables a nivel de aplicación.
                   El Cloud Computing necesita de las SDN para brindar QoS, seguridad, despliegues en tiempo real,
                   elasticidad de almacenamiento y para modificar sus sistemas propios de acreditación del servicio de
@@ -944,16 +1008,14 @@
                   <use xlink:href="#fa-cloud"></use>
                 </svg>
                 <h2>
-
                   Cloud Computing
                 </h2>
                 <p style="text-align: justify">
                   La revolución del Cloud es un hecho. Está presente en la vida de las personas mediante los servicios
                   de almacenamiento, redes sociales, IoT y aplicaciones.
-                  Desde un buen enfoque, representa el futuro de la computación y las redes. A medida que se vayan
+                  A medida que se vayan
                   mejorando los tiempos de retardo cada vez más servicios van a poder ser brindados por proveedores de
                   Cloud. Por ejemplo, Gaming en la Nube: sin necesidad de costosas consolas.
-
                 </p>
               </div>
             </li>
@@ -964,37 +1026,24 @@
       </section>
 
 
-      <section class="bg-black">
-        <span class="background dark" style="background-image:url('./static/images/bg/1.jpg')"></span>
-        <div class="wrap">
-          <h3><strong>Marco Práctico</strong></h3>
+      <section class="bg-white">
+        <span class="background-center-left" style="
+          background-image:url('./static/images/bg/fondo-general-template.jpg');
+          "></span>
+        <div class="wrap size-50">
+          <h3 style="text-align: center"><strong>Marco Práctico</strong></h3>
           <ul class="flexblock features">
             <li>
               <div>
                 <svg class="fa-bolt">
                   <use xlink:href="#fa-bolt"></use>
                 </svg>
-                <h2>
-                  SDN
-                </h2>
+
                 <p style="text-align: justify">
 
                   En el apartado de las SDN se generó la simulación realista de una red de computadoras SDN. Se trabajó
-                  sobre el plano de datos y se interactuó de forma indirecta con el controlador (sin manipularlo).
-                </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <svg class="fa-globe">
-                  <use xlink:href="#fa-cloud"></use>
-                </svg>
+                  sobre el plano de datos.
 
-                <h2>
-
-                  Cloud Computing
-                </h2>
-                <p style="text-align: justify">
                   Se realizó un Laboratorio SDN en una instancia IaaS corriendo en AWS
                   EC2.
                   Así, se logró un acercamiento a las tecnologías de enrutamiento utilizadas en centros de
@@ -1019,29 +1068,28 @@
           <br><br>
           <div class="bg-netflix">
             <ul class="flexblock features">
-              <li>
-                <h3>
-                  Utilización de otras IaaS tales como Google Cloud, Microsoft Azure, OpenNebula, OpenStack.
 
-                </h3>
-              </li>
               <li>
                 <ol>
                   <li>
                     <h3>
-                      Realizar trabajos de inyección de políticas de tráfico a través de la manipulación del plano de
-                      control.
+                      Queda preaprado el Laboratorio SDN para realizar trabajos de inyección de políticas de tráfico a
+                      través de la manipulación del plano de
+                      control. Se tiene previsto utilizar OpenDayLight por la extensa documentación.
+
                     </h3>
                   </li>
                   <br>
-                  <li>
+                  <a href="https://www.opendaylight.org/" target="_blank">
+                    <li>
+                      <img src="./static/images/logos/opendaylight.png" alt="" style="
+                      display:inline-block;
+                      width: 100%;
+                      margin-left: auto;
+                      margin-right: auto;">
+                    </li>
 
-                    <img src="./static/images/logos/opendaylight.png" alt="" style="
-                    display:inline-block;
-                    width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;">
-                  </li>
+                  </a>
                 </ol>
               </li>
               <li>
@@ -1050,22 +1098,57 @@
                     <h3>implementación de estas herramientas en despliegue de Clusters y SDDC para nubes privadas con
                       OpenStack.</h3>
                   </li>
-                  <li>
-                    <img src="./static/images/logos/openstack.png" alt="" style="
+                  <a href="https://www.openstack.org/"  target="_blank">
+                    <li>
+                      <img src="./static/images/logos/openstack.png" alt="" style="
                       display:inline-block;
                       width: 50%;
                       margin-left: auto;
                       margin-right: auto;">
-                  </li>
+                    </li>
+
+                  </a>
                 </ol>
               </li>
+              <li>
+                <ol>
+                  <li>
+                    <h3>
+                      El siguiente nivel es realizar despliegues con OpenNebula, herramienta OpenSource que da soporte
+                      para la administración de Data Centers virtuales, Cloud Privadas e Híbridas.
+                    </h3>
+                  </li>
+                  <a href="https://opennebula.org/"  target="_blank">
+                    <li>
+                      <img src="./static/images/logos/open-nebula.png" alt="" style="
+                      display:inline-block;
+                      width: 50%;
+                      margin-left: auto;
+                      margin-right: auto;">
+                    </li>
 
+                  </a>
+
+
+                </ol>
+              </li>
             </ul>
           </div>
           <!-- .end .bg-white shadow -->
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <section class="bg-netflix">
+          <span class="background-center-left" style="
+            background-image:url('./static/images/bg/fondo-general-template.jpg');
+            "></span>
+          <div class="wrap size-50 aligncenter">
+            <img src="./static/images/logos/esquemafuturo.png" alt="">
+          </div>
+          <br><br>
+          <h3 class="wrap aligncenter"><strong>Esquema futuro</strong></h3>
+        </section>
 
       <section class="bg-apple dark">
         <span class="background anim dark" style="background-image:url('./static/images/bg/questions.png')"></span>
